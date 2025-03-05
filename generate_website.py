@@ -1,7 +1,7 @@
 import anthropic
 import os
 
-client = anthropic.Anthropic(api_key="REMOVED_API_KEY")
+client = anthropic.Anthropic(api_key=os.getenv"REMOVED_API_KEY")
 
 def generate_code(prompt):
     message = client.messages.create(
