@@ -1,0 +1,154 @@
+# Basic HTML for a Responsive Website Homepage
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Website</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts (optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Your Logo</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="#" class="nav-link">Portfolio</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Our Website</h1>
+                <p>We create beautiful and functional websites that help your business grow.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section (add your content here) -->
+    <main>
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Our Features</h2>
+                <div class="feature-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icon1.svg" alt="Feature 1">
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Our websites look great on all devices, from mobile phones to desktop computers.</p>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icon2.svg" alt="Feature 2">
+                        </div>
+                        <h3>Fast Loading</h3>
+                        <p>Optimized for speed to ensure your visitors have the best experience.</p>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icon3.svg" alt="Feature 3">
+                        </div>
+                        <h3>SEO Friendly</h3>
+                        <p>Built with search engines in mind to help your website rank higher.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>We are a web development company dedicated to creating amazing digital experiences.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Web Street, Internet City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@yourwebsite.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript files -->
+    <script src="js/main.js"></script>
+    <!-- Font Awesome for icons (optional) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+```
+
+## Notes on the Code:
+
+1. **Responsive Design**:
+   - The `viewport` meta tag ensures proper scaling on different devices
+   - Container classes help with responsive layouts
+
+2. **Structure**:
+   - Navigation bar with mobile menu toggle
+   - Hero section with call-to-action buttons
+   - Features section with a card layout
+   - Footer with multiple sections and social links
+
+3. **External Files**:
+   - CSS is linked in the head (`css/styles.css`)
+   - JavaScript is linked at the end of the body (`js/main.js`)
+   - Optional Google Fonts and Font Awesome for icons
+
+4. **Next Steps**:
+   - Create the CSS file to style this HTML
+   - Implement the JavaScript for the mobile menu toggle
+   - Replace placeholder images and content with your own
+
+This HTML provides a solid foundation for a responsive website that you can customize to your needs.
