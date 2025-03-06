@@ -1,7 +1,7 @@
 import anthropic
 import os
 
-client = anthropic.Anthropic(api_key=os.getenv"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")
+client = anthropic.Anthropic(api_key="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")
 
 def generate_code(prompt):
     message = client.messages.create(
