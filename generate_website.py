@@ -1,7 +1,12 @@
-import anthropic
+from dotenv import load_dotenv
 import os
+import anthropic
 
-client = anthropic.Anthropic(api_key="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")
+load_dotenv()  # Reads from .env file
+
+client = anthropic.Anthropic(
+    api_key=os.getenv("ANTHROPIC_API_KEY")
+)
 
 def generate_code(prompt):
     message = client.messages.create(
