@@ -13,9 +13,10 @@ def generate_code(prompt):
     return message.content[0].text
 
 # Example prompts
-html_prompt = "Write basic HTML code for a responsive website homepage with a navbar, hero section, and footer. Link CSS and JS files."
-css_prompt = "Write clean and modern CSS styling for a simple responsive website with a navbar, hero section, and footer."
-js_prompt = "Write minimal JavaScript code to toggle a responsive mobile navigation menu."
+html_prompt = "Write detailed HTML code for a unique, responsive webpage featuring a top navigation bar, an engaging hero section introducing the concept of a public 'live-forever' textbox, and a footer. Include a prominently placed interactive textbox in the hero section, clearly labeled 'Type something, and it'll live forever!'. Below it, add a live countdown timer starting from 30 minutes, clearly visible and styled creatively. Properly link 'style.css' for styling and 'script.js' for interactive JavaScript functionality."
+css_prompt = "Write clean, modern, and creative CSS styling for a responsive webpage containing a stylish navigation bar, visually appealing hero section, and concise footer. Use vibrant gradients, subtle animations, and smooth transitions to emphasize interactivity. Highlight the live public textbox prominently, ensuring it's inviting and user-friendly. Style a visually dynamic countdown timer beneath the textbox, using large numbers and contrasting colors, making it eye-catching and easily readable on all devices."
+js_prompt = "Write clear, minimal, and efficient JavaScript code that toggles a responsive mobile navigation menu on click. Additionally, implement functionality for a public textbox where users can type messages that remain visible indefinitely (persisted using localStorage). Include a JavaScript countdown timer that visibly counts down from 30 minutes, resetting automatically once it reaches zero."
+
 
 # Generate and save HTML
 with open("index.html", "w", encoding="utf-8") as html_file:
