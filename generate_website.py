@@ -1,12 +1,12 @@
 import anthropic
 import os
 
-client = anthropic.Anthropic(api_key=os.getenv"REMOVED_API_KEY")
+client = anthropic.Anthropic(api_key=os.getenv"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")
 
 def generate_code(prompt):
     message = client.messages.create(
         model="claude-3-7-sonnet-20250219",
-        max_tokens=2000,
+        max_tokens=20000,
         temperature=0.5,
         messages=[{"role": "user", "content": prompt}]
     )
